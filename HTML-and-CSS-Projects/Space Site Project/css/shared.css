@@ -246,8 +246,8 @@ section {
     word-spacing: .3pt;
 }
 
-.reseravation p {    
-    color: #13161B;
+p {    
+    color: #16131b;
     width: 50%;
     margin: 0 auto;
 }
@@ -305,7 +305,7 @@ section {
     position: relative;
     display: inside; 
     float: right;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .terms:hover    {

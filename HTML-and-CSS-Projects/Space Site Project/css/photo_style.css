@@ -59,7 +59,7 @@ p{
 
 .photo-overlay  {
     opacity: 0;
-    gtransitionL opacity .1s;
+    transition: opacity .1s;
     border-radius: 10px;
     cursor: pointer;
 }
