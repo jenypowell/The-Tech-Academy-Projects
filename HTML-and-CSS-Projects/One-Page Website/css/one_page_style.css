@@ -1,9 +1,6 @@
-/*----------------------------------------
-    Author: Jeny Powell
-    checkoutray.space
--------------------------------------------
-    GENERIC STYLES
---------------------------------------------*/
+ /*--------------------------------------------
+    GENERIC STYLE
+-----------------------------------------------*/
 html    {
     font-family: sans-serif;
     font-size: 62.5%;
@@ -11,61 +8,31 @@ html    {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
+    
 body    {
     font-size: 14px;
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
-    }
-
-footer,
-nav {
-    display: block;
+    color: rgb(225, 220, 248);
+    background-color:  rgba(112, 2, 116, 0.3);
 }
 
-h1, h2, h3, h4, h5, h6  {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1  {
-    line-height: 50px;
+h3 {
+    color: black;
+    font-size: 40px;
     font-weight: 900;
-    font-size: 30px;
-    text-transform: uppercase;
     text-align: center;
-    color: #e91c1c;
-    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-h1::after   {   /*This is the underline */
-    display: block;
-    content: "";
-    height: 2px;
-    width: 150px;
-    background: #e91c1c;
-    margin: 5px auto 40px;
-    box-shadow: 5px 2px 3px rgba(0,0,0,.5);
-    }
-
-h2  {
-    line-height: 50px;
-    color: #e91c1c;
-}
-
-h3  {
-    line-height: 30px;
-    padding-bottom: 20px;
-}
-
-h4  {
-    padding-top: 25px;
-    line-height: 40px;
-    padding-bottom: 0px;
-    font-size: 22px;
+h4 {
+    color: black;
+    font-size: 20px;
     font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 p   {
@@ -93,6 +60,25 @@ section {
     display: block;
 }
 
+   
+.clearfix:after,
+.container:after,
+.navbar:after  {
+    clear: both;
+    display: table;
+    content: " ";
+    }
+
+h1  {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e91c1c;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
 .container  {
     padding-right: 15px;
     padding-left: 15px;
@@ -100,6 +86,7 @@ section {
     margin-left: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .container-fluid    {
@@ -114,45 +101,55 @@ section {
     margin-left: -15px;
 }
 
-.clearfix:after,
-.container:after,
-.navbar:after  {
-    clear: both;
-    display: table;
-    content: " ";
-}
-
+ h1::after   {   /*This is the underline */
+        display: block;
+        content: "";
+        height: 2px;
+        width: 150px;
+        background: #e91c1c;
+        margin: 5px auto 40px;
+        box-shadow: 5px 2px 3px rgba(0,0,0,.5);
+        }
+    
 .wrap   {
+    display: inline-block;
     height: 100%;
     width: 100%;
     position: absolute;
-    /*This ensures that the images cannot 
-    render outside of their container 
-    without forcing any scrollbars*/
+        /*This ensures that the images cannot 
+        render outside of their container 
+        without forcing any scrollbars*/
     overflow: hidden;
     top: 0;
     left: 0;
     text-align: center;
 }
-
+    
 .menu-container    {
     max-height: 340px;
     margin: 0% auto;
     content: " ";
-    /* top: 0;
-    left: 0; */
-    /* position: absolute; */ /* to the top edge of the screen */
+        /* top: 0;
+        left: 0; */
+        /* position: absolute; */ /* to the top edge of the screen */
     width: 100%;
     position: fixed;
     z-index: 100;
-    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
+footer,
+nav {
+    display: block;
+}
+
+
 
 /*-----------------------------------------
     HOME SECTION STYLES
 --------------------------------------------*/
 #home   {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../disney_photos/disney_castle.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -162,8 +159,8 @@ section {
     display: block;
     height: auto;
     padding-top: 350px; /*This is to spacer before the Main title logo. */
-    padding-bottom: 500px; /* This is to spacer after the Main title logo. */
-    color: #fff;
+    padding-bottom: 400px; /* This is to spacer after the Main title logo. */
+    color: rgb(5, 5, 5);
 }
 
 .head-main  {
@@ -196,6 +193,124 @@ section {
     padding:5px;
 }
 
+
+/*-----------------------------------------
+    MENU SELECTION ANIMATION
+--------------------------------------------*/
+.menu   {
+    color: #f00;
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li  {
+    color: #000;
+    background-color: rgb(151, 134, 196);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.5);
+    border-radius: 6px;
+    /*background-color: #052136:*/
+    cursor: pointer;
+}
+
+.menu li:hover  {
+    color: #f00;
+    background-color: rgba(0, 100, 42, 0.3);
+}
+
+/*-----------------------------------------
+    GALLERY ANIMATION ****NOT UPDATED
+--------------------------------------------*/
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #00f70c;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.7);
+}
+
+.photo-container    {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-container img    {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-overlay  {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* For centering text inside .photo-overlay */
+    align-items: center;
+    background: rgba(0,0,0,.5);
+}
+
+
+#video  {
+    display: block ;
+    margin: auto;
+}
+
+
+/*-----------------------------------------
+    PHOTO OVERLAY TRANSITIONS
+-------------------------------------------*/
+.photo-overlay  {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover    {
+    opacity: 1;
+}
+
+.photo img  {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img    {
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(56, 0, 73, 0.3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
 /*-----------------------------------------
     Contact STYLES
 --------------------------------------------*/
@@ -206,25 +321,25 @@ section {
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
+    background-color: rgba(56, 0, 73, 0.3);
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     position: relative
 }
 
-#contact    {
+#contest    {
     background-color: #f5f3f3;
 }
 
-.reservation    {
+.contest    {
     width: 60%;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
+    background-color: rgba(56, 0, 73, 0.3);
     box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
 }
 
-.reservation h2 {
+.contest h2 {
     width: 70%;
     text-align: center;
     margin: 0 auto;
@@ -235,7 +350,7 @@ section {
     word-spacing: 0pt;
 }
 
-.reservation h2 span {
+.contest h2 span {
     width: 70%;
     text-align: center;
     margin: 0 auto;
@@ -253,31 +368,31 @@ p {
     margin: 0 auto;
 }
 
-.reservation form   {
+.contest form   {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #077cf1;
     padding: 12px 12px;
     width: 70%;
-    border: 1px solid #808080;
+    border: 1px solid #0f0d0f;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227,222,222);
+    background: rgb(250, 249, 250);
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input[type="text"] {
+.contest input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #077cf1;
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-top: 1px solid #090b0d;
-    border-right: 2px solid #424549;
-    border-bottom: 2px solid #424549;
+    border-right: 2px solid #0f0d0f;
+    border-bottom: 2px solid #0f0d0f;
     border-left: 1px solid #090b0d;
     margin: 10px;
     border-radius: 7px;
@@ -286,8 +401,8 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input[type="text"]:hover   {
-    box-shadow: 0 0 18px rgba(100,65,0,.8);
+.contest input[type="text"]:hover   {
+    box-shadow: 0 0 18px rgba(74, 5, 114, 0.8);
 }
 
 .form-spacer {
@@ -306,7 +421,7 @@ p {
     position: relative;
     display: inside; 
     float: right;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
 .terms:hover    {
@@ -341,35 +456,9 @@ p {
     Contact STYLES
 --------------------------------------------*/
 #footer {
-    background-color: rgba(100,65,0,.3);
+    background-color: rgba(56, 0, 73, 0.3);
     color:#000;
     text-shadow: 2px 2px 6px 0 (0,0,0,.4);
     padding: 20px 50px 20px 50px;
     text-align: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
