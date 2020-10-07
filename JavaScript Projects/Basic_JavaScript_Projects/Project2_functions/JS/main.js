@@ -25,10 +25,12 @@ function My_First_Function() {      //Defining a function and naming it
                                         //string variable
     document.getElementById ("Purple_Text") .innerHTML = result; //Putting the value 
                                         //of result into HTML element with "Purple_Text" id.
-}
+};
 
 function myFunction ()  {
     var sentence = "Tonight the kids and their dad raced bmx bikes";
     sentence += "They all did great."
     document.getElementById("Concatenate").innerHTML = sentence;
-}
+};
+
+
