@@ -1,8 +1,8 @@
 
-document.write(Bigger = (10 > 3) ? "Left numer is bigger" : "Right number is bigger");
+document.write(Bigger = (10 > 3) ? "Left number is bigger" : "Right number is bigger");
 document.write("<br> <br>"); //determine which is bigger
 
-document.write(Bigger = (10 < 3) ? "Left numer is bigger" : "Right number is bigger"); //determine which is bigger
+document.write(Bigger = (10 < 3) ? "Left number is bigger" : "Right number is bigger"); //determine which is bigger
 document.write("<br> <br>");
 
 function ride_function()    {
