@@ -88,8 +88,9 @@ function nested_function()   {
     document.getElementById("nested").innerHTML = nest();
     function nest()    {
         var Starting_Point=459;
-        function Less_one() {Starting_Point -= 1;}
+        function Less_one() {Starting_Point -= 176;}
         Less_one();
         return Starting_Point;
         }
-}       //create nested function that decreases by 1
+}       //create nested function that decreases by 176
+
