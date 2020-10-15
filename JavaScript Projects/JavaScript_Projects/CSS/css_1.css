@@ -1,0 +1,9 @@
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px dashed purple;
+    border-radius: 6px;
+    background-color: #3cbd3c
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe </title>
+    <meta charset = "UTF-8">
+</head>    
+
+<body>
+    <div>
+    <p>The rocks we find in the yard are usually:</p>
+    <p id="new"></p>
+    <p id="displayAge"></p>
+    </div>
+  <script>
+    var rockColor;
+    
+    rockColor = () => {
+      return "Red!";
+    }
+    
+    document.getElementById("new").innerHTML = rockColor();
+
+   
+
+    var numbers = [5, 4, 98, 17, 23];
+    var someOver18 = numbers.some(ageFunction);
+
+    document.getElementById("displayAge").innerHTML = "Some numbers listed are less than 15 is " + someOver18;
+
+    function ageFunction(value, index, array) {
+    return value < 15;
+    }
+
+    </script>
+
+
+
+
+
+</body>
+
+
+</html>
