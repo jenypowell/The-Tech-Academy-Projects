@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta characterSet="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <title>jQuery</title>
+    </head>
+          <script> 
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1 </p>\
+                            <p id='2'>Paragraph 2 </p>\
+                            <p id='3'>Paragraph 3 </p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //make p2 text color red
+            $("#2") .css({"color":"red"})
+            //when you click on p3 it hides h1
+            $("#3") .click(function()   {
+                $('h1').hide();
+            });
+            //when you click on p1 it makes p3 fade out
+            $("#1").click (function()    {
+                    $('#3').fadeOut();
+            });
+        });
+        
+        
+</script>
+<html>
