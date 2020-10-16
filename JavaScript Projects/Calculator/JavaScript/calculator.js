@@ -112,6 +112,6 @@ function Handle_Operators(Next_Operator)    {
             return;
         }
         Input_Digit(target.value);
-        Update_Display;
+        Update_Display();
 
     })
