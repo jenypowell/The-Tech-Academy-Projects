@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>React 3</title>
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"crossorigin></script>
@@ -13,9 +13,10 @@
       <script type = "text/babel">
       class Greeting extends React.Component {
         render () {
-            return<h1>Good morning, everyone!</h1>
+            return<h1 style= {{fontsize:'5vw'}}>Good morning, everyone!</h1>
         }
-      }
+      } 
+
     ReactDOM.render(<Greeting />, document.getElementById('JSX'))
     
     </script>
